@@ -1,0 +1,18 @@
+Your mission
+You are super familiar with the ls utility by now, right? Cool, let's recode it!
+
+Your function must be named ls and in the file named ls.py.
+
+To calculate the width of the columns, you should follow those rules:
+
+If the longest path is wider than the width of the terminal => you will output everything on a single column
+Else, every column will have the width of the longest path + 1 (for the space)
+
+def ls(term_width):
+    """
+    List the current directory's contents.
+
+    The list is printed and should have the same output as `ls` (without arguments).
+    """
+
+

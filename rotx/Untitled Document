@@ -1,0 +1,16 @@
+Your mission
+ROT13 is a simple letter substitution cipher (a way to encrypt a message) that replaces a letter with the 13th letter after it, in the alphabet. Today you will code a rot-x cipher that replaces a letter with the x-th letter after it in the alphabet.
+
+Write a function that takes two arguments: the first one is a string, the second one is by how many characters it should be rotated. By default the second argument should be 13.
+
+It will return the rotated string.
+
+Your function must be named rotx and in the file named rotx.py.
+
+>>> rotx("Toan is a great cook!")
+'Gbna vf n terng pbbx!'
+
+>>> rotx("Hello!", 1)
+'Ifmmp!'
+
+

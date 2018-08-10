@@ -1,0 +1,43 @@
+Your mission
+Write a script sort_it.py that reads the standard entry, puts all lines into an array and sorts the array with the function special_sort. The script will then output the resulting array.
+
+You have to import the special_sort function from the sorts module, which we will provide.
+
+Signature
+When the special_sort function raises a RuntimeError, your script should display I catch a RuntimeError!. RuntimeError is the only Exception you should catch.
+
+﻿﻿Here is the signature of the special_sort function you will use:
+
+def special_sort(array):
+	"""Given an array as argument, this function sorts it efficiently and returns the sorted array.
+
+	>>> special_sort(["Hello, my name", "is", "MENU"])
+	["Hello, my name", "MENU", "is"]
+
+	If the function encounters an error while executing, it will raise a RuntimeError.
+
+	>>> special_sort(["I hope it will", "work"])
+  	I catch a RuntimeError!
+  	"""
+
+Example
+
+$ python3 sort_it.py
+Hello, my name
+is
+MENU
+
+["Hello, my name", "MENU", "is"]
+$ python3 sort_it.py
+I hope it will
+work
+
+I catch a RuntimeError!
+
+
+How to test it?
+The sorts module isn't part of the standard Python library, it's our own module that the Sentinel will import to test if you know how to catch a given exception.
+
+To test your solution, you can create your own sorts module. It's easy: by default Python will look for an unknown module in the current directory.
+
+

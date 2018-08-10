@@ -1,0 +1,29 @@
+Your mission
+Write a function that returns the string representation of an int in a specified base. By default the base is '0123456789'. ValueError must be raised when the base is not valid.
+
+Your function must be named int2base and in the file named int2base.py.
+
+>>> int2base(23)
+'23'
+>>> int2base(5, '01')
+'101'
+>>> int2base(20, base='qwertyuiopasdfghjklz')
+'wq'
+>>> int2base(-23)
+'-23'
+>>> int2base(2, base='):')
+':)'
+>>> int2base(-23, base='0')
+Traceback (most recent call last):
+  ...
+ValueError: The length of base must be >= 2.
+>>> int2base(-23, base='00')
+Traceback (most recent call last):
+  ...
+ValueError: The base must be composed of unique characters.
+>>> int2base(-23, base='-+')
+Traceback (most recent call last):
+  ...
+ValueError: '-' is not a valid character for the base.
+
+

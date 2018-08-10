@@ -1,0 +1,22 @@
+Your mission
+A checksum is a series of numbers and letters derived from a block of data. You calculate it by applying an algorithm on a block of data. The MD5 algorithm is frequently used for that purpose.
+
+Write a script checksum.py that will produce the md5 checksums for all files in a given directory. The directory name will passed as an argument to your script. The checksums will be written in a file called checksums, and they will be sorted by file name.
+
+You will use the md5 function from the hashlib library.
+
+$ ls
+README.md  checksum.py  documents
+$ ls documents/
+Accounting.xls  Mathieu_eating.jpg  Tam_marathon.jpg
+$ python3 checksum.py documents/
+$ ls
+README.md  checksum.py  checksums  documents
+$ cat checksums 
+0a9082478b1a1466f6e56fd5e48db8c4 Accounting.xls
+a8309e606bcb66a13c4e128dc02bf750 Mathieu_eating.jpg
+7c01564327e303b4f9ccab6e9a9b5eef Tam_marathon.jpg
+
+
+Hint
+., ./, /tmp/mydir and /tmp/mydir/ are all valid directories. Only valid directories will be specified.

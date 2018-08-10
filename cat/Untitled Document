@@ -1,0 +1,15 @@
+Your mission
+By now you should be familiar with the cat shell utility. Your job today is to reproduce its usage without options.
+
+Your cat.py program will concatenate and output the files passed as arguments. If no argument is given, your program will read and output the content of the standard entry.
+
+$ echo "I'm on standard entry !" | python3 cat.py
+I'm on standard entry !
+$ echo -n "I'm in a file" > test
+$ cat test
+I'm in a file$ python3 cat.py test
+I'm in a file$
+
+Hint
+Look into what the echo -n option does to understand what's happening and how you should handle the output.
+
